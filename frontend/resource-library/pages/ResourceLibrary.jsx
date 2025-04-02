@@ -2,12 +2,21 @@ import React from "react";
 import ResourceCard from "../components/ResourceCard";
 import { useNavigate } from "react-router-dom"; // For navigation
 import dsaImg from "../assets/DSA.jpg";
+import sqlImg from "../assets/SQL.jpg";
+import bdImg from "../assets/BD.jpg";
+import fdImg from "../assets/FD.jpg";
 import "./ResourceLibrary.css"; // Page styling
 
 const resources = [
-  { name: "Data Structures", image: dsaImg, path: "/resources/dsa" },
-  { name: "Frontend Development", image: "https://via.placeholder.com/200", path: "/resources/frontend" },
-  { name: "Backend Development", image: "https://via.placeholder.com/200", path: "/resources/backend" },
+  { name: "Data Structures", image: dsaImg},
+  { name: "Frontend Development", image: sqlImg},
+  { name: "Backend Development", image: bdImg},
+  { name: "Frontend Development", image: fdImg},
+  { name: "AI/ML", image: "https://via.placeholder.com/200"},
+  { name: "Data Analysis", image: "https://via.placeholder.com/200"},
+  { name: "DevOPS", image: "https://via.placeholder.com/200"},
+    { name: "Cyber Security", image: "https://via.placeholder.com/200"},
+  { name: "BlockChain", image: "https://via.placeholder.com/200"},
 ];
 
 const ResourceLibrary = () => {
