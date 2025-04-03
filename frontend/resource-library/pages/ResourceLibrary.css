@@ -1,16 +1,110 @@
 .resource-library {
-    text-align: left;
-    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
 }
 
 .page-title {
-    font-size: 24px;
-    margin-bottom: 50px;
+    color: #0A2463;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.page-subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.search-filter-container {
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filter-button {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+    background-color: #f1f1f1;
+}
+
+.filter-button.active {
+    background-color: #E84855;
+    color: white;
+    border-color: #E84855;
 }
 
 .resource-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
 }

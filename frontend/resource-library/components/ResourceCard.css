@@ -1,24 +1,90 @@
 .resource-card {
-    width: 300px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 8px;
     overflow: hidden;
-    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .resource-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .resource-image {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover .resource-image {
+    transform: scale(1.05);
+}
+
+.resource-category {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0A2463;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.resource-card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .resource-name {
-    font-size: 16px;
-    font-weight: bold;
+    color: #0A2463;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #E84855;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.resource-description {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.learn-more {
+    color: #E84855;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.arrow {
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+}
+
+.resource-card:hover .arrow {
+    transform: translateX(3px);
 }
