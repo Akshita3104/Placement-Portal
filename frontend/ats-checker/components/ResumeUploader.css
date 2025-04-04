@@ -1,0 +1,119 @@
+/* ResumeUploader.css */
+
+.resume-container {
+    width: 100%;
+  }
+  
+  .uploader-container {
+    border: 2px dashed #cbd5e1;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploader-container.dragging {
+    background-color: #f1f5f9;
+  }
+  
+  .upload-icon {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 auto;
+    color: #94a3b8;
+  }
+  
+  .upload-title {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .upload-description {
+    margin-top: 0.5rem;
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+  
+  .upload-hint {
+    margin-top: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.75rem;
+  }
+  
+  .upload-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #70b400;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .upload-button-outline {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: #0f172a;
+    border: 1px solid #0f172a;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .upload-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #f8fafc;
+  }
+  
+  .upload-card.success {
+    background-color: #f0fdf4;
+  }
+  
+  .status-icon {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 auto 1rem auto;
+    color: #94a3b8;
+  }
+  
+  .success-icon {
+    color: #16a34a;
+  }
+  
+  .success-title {
+    color: #166534;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-name {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .upload-status {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  /* Progress Bar */
+  .progress-root {
+    position: relative;
+    height: 1rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 9999px;
+    background-color: #e2e8f0;
+  }
+  
+  .progress-indicator {
+    height: 100%;
+    width: 100%;
+    background-color: #a81e1c;
+    transition: transform 0.3s ease;
+  }
+  

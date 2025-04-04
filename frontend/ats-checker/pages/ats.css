@@ -1,0 +1,314 @@
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.5;
+  }
+  
+  .ats-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .ats-container {
+      padding: 1.5rem;
+    }
+  }
+  
+  .ats-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: var(--ats-shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ats-button {
+    background-color: #a81e1c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ats-button:hover {
+    background-color: #ececf1;
+  }
+  
+  .ats-button-outline {
+    background-color: transparent;
+    color: #0f172a;
+    border: 1px solid #a81e1c;
+  }
+  
+  .ats-button-outline:hover {
+    background-color: rgba(185, 28, 28, 0.1);
+  }
+  
+  .ats-button-small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .ats-flex {
+    display: flex;
+  }
+  
+  .ats-grid {
+    display: grid;
+  }
+  
+  .ats-grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .ats-grid-cols-md-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .ats-grid-cols-lg-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .ats-gap-4 {
+    gap: 1rem;
+  }
+  
+  .ats-gap-6 {
+    gap: 1.5rem;
+  }
+  
+  .ats-mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .ats-mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .ats-mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ats-mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  .ats-mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .ats-mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .ats-mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .ats-text-center {
+    text-align: center;
+  }
+  
+  .ats-text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .ats-text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .ats-text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .ats-text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .ats-font-semibold {
+    font-weight: 600;
+  }
+  
+  .ats-font-bold {
+    font-weight: 700;
+  }
+  
+  .ats-rounded {
+    border-radius: 0.375rem;
+  }
+  
+  .ats-p-4 {
+    padding: 1rem;
+  }
+  
+  /* Skills Tag Component */
+  .skills-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    background-color: #f1f5f9;
+    color: #334155;
+  }
+  
+  .skills-tag.matched {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  .skills-tag.hot {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  /* Resume Score Card */
+  .score-card-header {
+    background-color: #a81e1c;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .score-good {
+    color: #16a34a;
+  }
+  
+  .score-warning {
+    color: #dc3545;
+  }
+  
+  .score-poor {
+    color: #c7ca02;
+  }
+  
+  /* Resume Uploader */
+  .uploader-container {
+    border: 2px dashed #cbd5e1;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  
+  .uploader-container:hover {
+    border-color: #a81e1c;
+  }
+  
+  .uploader-container.dragging {
+    border-color: #a81e1c;
+    background-color: rgba(185, 28, 28, 0.05);
+  }
+  
+  /* Tabs */
+  .ats-tabs {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ats-tabs-list {
+    display: flex;
+    border-bottom: 1px solid #a81e1c;
+  }
+  
+  .ats-tab {
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .ats-tab:hover {
+    color: #005ba6;
+  }
+  
+  .ats-tab.active {
+    color: #a81e1c;
+    border-bottom-color: #a81e1c;
+  }
+  
+  .ats-tab.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .progress-bar {
+    height: 0.5rem;
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #a81e1c;
+    border-radius: 9999px;
+    transition: width 0.3s;
+  }
+  
+  .metric-card {
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .metric-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #005ba6;
+  }
+  
+  .metric-label {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+   
+  /* Compare tab styles */
+  .compare-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .compare-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .compare-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: var(--ats-shadow);
+  }
+  
+  .compare-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  

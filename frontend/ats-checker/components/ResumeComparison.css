@@ -1,0 +1,148 @@
+
+  .resume-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  .inner-card {
+    margin-top: 1rem;
+  }
+  
+  .resume-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-subtext {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .compare-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .compare-card {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: #f8fafc;
+  }
+  
+  .upload-placeholder {
+    border: 2px dashed #cbd5e1;
+    text-align: center;
+  }
+  
+  .upload-area {
+    padding: 1rem;
+  }
+  
+  .compare-title {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon-center {
+    display: block;
+    margin: 0 auto 0.5rem auto;
+  }
+  
+  .job-section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .job-search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+  }
+  
+  .resume-button {
+    padding: 0.5rem 1rem;
+    background-color: #0000009f;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .comparison-block {
+    padding: 0 1rem;
+    background-color: #f7f8fa;
+    border-radius: 1rem;
+  }
+  
+  .category-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #035ba6;
+    padding: 2vh 0 0 0;
+    margin: 1vh 0 0 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .peer-block {
+    grid-column: 1 / -1;
+  }
+  
+  .small-text {
+    font-size: 0.75rem;
+  }
+  
+  .small-bold {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1vh 0 0 0;
+  }
+  
+  .bullet-list {
+    list-style-type: disc;
+    padding-left: 1rem;
+  }
+  
+  .icon {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+  }
+  
+  .success {
+    color: #16a34a;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+  .improvement-card {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+  }
+  

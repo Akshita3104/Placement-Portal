@@ -1,0 +1,101 @@
+.resume-card {
+    border: 1px solid #ececf1;
+    border-radius: 10px;
+    padding: 0 3vw;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .resume-card-header {
+    text-align: center;
+  }
+  
+  .resume-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .resume-score-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resume-score {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .score-good {
+    color: rgb(47, 255, 47);
+  }
+  
+  .score-warning {
+    color: yellow;
+  }
+  
+  .score-poor {
+    color: red;
+  }
+  
+  .resume-subtext {
+    margin: 1vh 0;
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+  
+  .resume-analysis {
+    padding-top: 1vh;
+  }
+  
+  .resume-section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .resume-category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+  
+  .resume-category-card {
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    padding: 1vh;
+  }
+  
+  .resume-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh;
+  }
+  
+  .resume-category-info {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+  }
+  
+  .score-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .resume-category-name {
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  
+  .resume-category-score {
+    font-weight: 600;
+  }
+  
+  .resume-feedback {
+    font-size: 0.875rem;
+    color: #4b5563;
+    padding: 0 2vw;
+  }
+  
