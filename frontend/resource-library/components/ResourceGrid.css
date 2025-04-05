@@ -1,0 +1,14 @@
+/* src/components/ResourceGrid.css */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Always 3 cards per row */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Optional: to center the grid on large screens */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
