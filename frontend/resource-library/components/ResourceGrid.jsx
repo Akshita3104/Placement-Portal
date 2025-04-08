@@ -1,6 +1,6 @@
 // src/components/ResourceGrid.jsx
 import React from "react";
-import ResourceCard from "./ResourceCard";
+import ResourceCard from "./ResourceCard.jsx";
 import "./ResourceGrid.css";
 
 const ResourceGrid = ({ resources, onResourceClick }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import ResourceLibrary from "./ResourceLibrary";
+import ResourceLibrary from "./ResourceLibrary.jsx";
 
 const Index = () => {
   return (

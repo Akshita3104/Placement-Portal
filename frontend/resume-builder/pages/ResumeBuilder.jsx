@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FileText, Upload, Download } from "lucide-react";
 import "./ResumeBuilder.css"; 
 
@@ -12,16 +13,32 @@ const ResumeBuilder = () => {
 
   return (
     <div className="resume-builder">
-      <div className="header">
-        <h1>Resume Builder</h1>
-        <div className="buttons">
-          <button className="btn-outline">
-            <Upload size={18} /> Import
-          </button>
-          <button className="btn">
-            <Download size={18} /> Export PDF
-          </button>
-        </div>
+      <div className="header-section">
+          <div className="resource-library-container">
+            <div className="breadcrumbs">
+              <div className="breadcrumb-item">
+                <Link to="/">Home</Link>
+                <span className="breadcrumb-separator">›</span>
+              </div>
+              <div className="breadcrumb-item">
+                <span className="breadcrumb-active">Resource Hub</span>
+              </div>
+            </div>
+                
+            <h1 className="page-title">Resource Hub</h1>
+                
+            <p className="page-subtitle">
+              Discover curated learning resources to enhance your skills and accelerate your career in technology.
+            </p>
+          </div>
+          <div className="buttons">
+            <button className="btn-outline">
+              <Upload size={18} /> Import
+            </button>
+            <button className="btn">
+              <Download size={18} /> Export PDF
+            </button>
+          </div>
       </div>
 
       <div className="content">

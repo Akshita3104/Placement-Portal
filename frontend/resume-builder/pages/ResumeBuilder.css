@@ -1,16 +1,105 @@
 .resume-builder {
     padding: 20px;
   }
-  
-  .header {
+
+  .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    padding: 40px 0 30px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+  }
+
+  .resource-library-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    padding-bottom: 1rem;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .breadcrumb-item {
+      display: flex;
+      align-items: center;
+  }
+
+  .breadcrumb-item a {
+      color: #0A2463;
+      text-decoration: none;
+  }
+
+  .breadcrumb-item a:hover {
+      text-decoration: underline;
+  }
+
+  .breadcrumb-separator {
+      margin: 0 0.5rem;
+  }
+
+  .breadcrumb-active {
+      color: #555;
+      font-weight: 500;
+  }
+
+  .page-title {
+    color: #0A2463;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .page-subtitle {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: left;
+      max-width: 800px;
+      padding: 0 15px;
+  }
+
+
+  @media (max-width: 992px) {
+      .resource-library-container {
+          padding: 0 20px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .page-title {
+          font-size: 32px;
+      }
+
+      .page-subtitle {
+          font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .page-title {
+          font-size: 28px;
+      }
+
+      .page-subtitle {
+          font-size: 14px;
+      }
   }
   
   .buttons {
     display: flex;
     gap: 10px;
+    padding: 20px;
   }
   
   .btn,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import ResumeUploader from '../components/ResumeUploader.jsx';
 import ResumeScoreCard from '../components/ResumeScoreCard.jsx';
 import ImprovementSuggestions from '../components/ImprovementSuggestions.jsx';
@@ -79,14 +80,26 @@ const ATSChecker = () => {
   
   return (
     <div className="ats-page">
-        <main className="ats-container">
-          <div className="ats-mb-8">
-            <h1 className="ats-text-3xl ats-font-bold ats-mb-2">ATS Resume Checker</h1>
-            <p>
-              Optimize your tech resume for Applicant Tracking Systems and stand out to recruiters
-            </p>
+      <div className="header-section">
+        <div className="resource-library-container">
+          <div className="breadcrumbs">
+            <div className="breadcrumb-item">
+              <Link to="/">Home</Link>
+              <span className="breadcrumb-separator">›</span>
+            </div>
+            <div className="breadcrumb-item">
+              <span className="breadcrumb-active">ATS Resume Checker</span>
+            </div>
           </div>
           
+          <h1 className="page-title">ATS Resume Checker</h1>
+          
+          <p className="page-subtitle">
+            Optimize your tech resume for Applicant Tracking Systems and stand out to recruiters.
+          </p>
+        </div>
+      </div>
+        <main className="ats-container">
           <div className="ats-tabs">
             <div className="ats-tabs-list">
               <div 
@@ -115,16 +128,16 @@ const ATSChecker = () => {
             <div className="ats-tab-content">
               {activeTab === 'upload' && (
                 <div className="ats-card">
-                  <h2 className="ats-text-xl ats-font-bold ats-mb-6 ats-text-center">Upload Your Resume for ATS Analysis</h2>
+                  <h2 className="ats-text ats-font ats-mb ats-text-center">Upload Your Resume for ATS Analysis</h2>
                   <ResumeUploader onUpload={handleResumeUpload} />
                   
-                  <div className="ats-mt-8 ats-border-t ats-pt-8">
-                    <h3 className="ats-text-lg ats-font-semibold ats-mb-4">Why Optimize for ATS?</h3>
-                    <p className="ats-mb-4">
+                  <div className="ats-mt ats-p">
+                    <h3 className="ats-text ats-font ats-mb">Why Optimize for ATS?</h3>
+                    <p className="ats-mb">
                       Over 90% of large companies use Applicant Tracking Systems to filter resumes before they reach human recruiters.
                       Most resumes are rejected by ATS systems before a human even sees them.
                     </p>
-                    <div className="ats-grid ats-grid-cols-1 ats-grid-cols-md-2 ats-grid-cols-lg-3 ats-gap-4 ats-mt-6">
+                    <div className="ats-grid ats-grid-cols-1 ats-grid-cols-2 ats-grid-cols-3 ats-gap ats-mt">
                       <div className="metric-card">
                         <div className="metric-value">75%</div>
                         <p className="metric-label">
@@ -149,7 +162,7 @@ const ATSChecker = () => {
               )}
               
               {activeTab === 'analysis' && resumeText && (
-                <div className="ats-grid ats-grid-cols-1 ats-grid-cols-lg-2 ats-gap-6">
+                <div className="ats-grid ats-grid-cols-1 ats-grid-cols-2 ats-gap">
                   <div>
                     <ResumeScoreCard 
                       overallScore={68} 

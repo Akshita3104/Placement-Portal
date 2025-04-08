@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import ResourceGrid from "../components/ResourceGrid";
+import ResourceGrid from "../components/ResourceGrid.jsx";
 import "./ResourceLibrary.css";
 
 const ResourceLibrary = () => {
