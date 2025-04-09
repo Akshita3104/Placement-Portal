@@ -14,22 +14,17 @@ const ResumeBuilder = () => {
   return (
     <div className="resume-builder">
       <div className="header-section">
-          <div className="resource-library-container">
+        <div className="resource-library-container">
+          <h1 className="page-title">Resume Builder</h1>
             <div className="breadcrumbs">
               <div className="breadcrumb-item">
                 <Link to="/">Home</Link>
                 <span className="breadcrumb-separator">›</span>
               </div>
               <div className="breadcrumb-item">
-                <span className="breadcrumb-active">Resource Hub</span>
+                <span className="breadcrumb-active">Resume Builder</span>
               </div>
             </div>
-                
-            <h1 className="page-title">Resource Hub</h1>
-                
-            <p className="page-subtitle">
-              Discover curated learning resources to enhance your skills and accelerate your career in technology.
-            </p>
           </div>
           <div className="buttons">
             <button className="btn-outline">

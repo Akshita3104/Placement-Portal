@@ -9,8 +9,9 @@ resource-page {
 
 .header-section {
     background-color: white;
-    padding: 40px 0 30px;
+    padding: 14px 30px 0 30px;
     border-bottom: 1px solid #eaeaea;
+    height: 50px;
     width: 100%;
 }
 
@@ -29,7 +30,7 @@ resource-page {
 
 .page-title {
     color: #0A2463;
-    font-size: 42px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     text-align: left;
@@ -136,6 +137,7 @@ resource-page {
 
 .resource-grid-container {
     width: 100%;
+    position: relative;
     padding: 0 15px 0 0;
 }
 

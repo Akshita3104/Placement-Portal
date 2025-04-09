@@ -107,6 +107,7 @@ const ResourceLibrary = () => {
     <div className="resource-page">
       <div className="header-section">
         <div className="resource-library-container">
+          <h2 className="page-title">Resource Hub</h2>
           <div className="breadcrumbs">
             <div className="breadcrumb-item">
               <Link to="/">Home</Link>
@@ -116,12 +117,6 @@ const ResourceLibrary = () => {
               <span className="breadcrumb-active">Resource Hub</span>
             </div>
           </div>
-          
-          <h1 className="page-title">Resource Hub</h1>
-          
-          <p className="page-subtitle">
-            Discover curated learning resources to enhance your skills and accelerate your career in technology.
-          </p>
         </div>
       </div>
       
